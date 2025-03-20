@@ -10,3 +10,7 @@ END AS Customer_profiling
 FROM customer cus
 INNER JOIN Trans Tra
 ON cus.`Customer ID` = tra.`customer ID`;
+
+Select customer, product, trans
+from product
+where product is NULL;
